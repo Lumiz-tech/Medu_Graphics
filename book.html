@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Book a Flyer | Medu_Graphics</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="assets/logo.png" alt="Medu Graphics Logo" />
+    <h1>Medu_Graphics</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Booking Form Section -->
+  <section class="booking-section">
+    <div class="container">
+      <h2 class="section-title">Book a Flyer</h2>
+      <p class="section-subtitle">Please fill out the form below to request your custom flyer design.</p>
+
+      <form action="https://formspree.io/f/mnnvkdkj" method="POST" class="booking-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="_replyto" required />
+
+        <label for="whatsapp">WhatsApp Number</label>
+        <input type="tel" id="whatsapp" name="whatsapp" placeholder="e.g. +2348012345678" required />
+
+        <label for="type">Flyer Type</label>
+        <select id="type" name="flyer-type" required>
+          <option value="" disabled selected>Select type</option>
+          <option>Corporate Event Flyer</option>
+          <option>Product Launch Flyer</option>
+          <option>Real Estate Flyer</option>
+          <option>Promotional Flyer</option>
+          <option>Other</option>
+        </select>
+
+        <label for="details">Project Details</label>
+        <textarea id="details" name="message" rows="5" required placeholder="Tell us what you need..."></textarea>
+
+        <button type="submit" class="btn btn-gold">Submit Request</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Medu_Graphics. All rights reserved.
+  </footer>
+
+</body>
+</html>

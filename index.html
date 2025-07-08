@@ -1,0 +1,78 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Medu_Graphics | Business Flyers</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <img src="assets/logo.png" alt="Medu Graphics Logo" />
+    <h1>Medu_Graphics</h1>
+  </header>
+
+  <!-- Navigation -->
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="services.html">Services</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <!-- Slideshow -->
+  <div class="slideshow-container">
+    <div class="mySlides fade">
+      <img src="assets/slider1.jpg" alt="Slide 1" />
+    </div>
+    <div class="mySlides fade">
+      <img src="assets/slider2.jpg" alt="Slide 2" />
+    </div>
+    <div class="mySlides fade">
+      <img src="assets/slider3.jpg" alt="Slide 3" />
+    </div>
+    <div class="mySlides fade">
+      <img src="assets/slider4.jpg" alt="Slide 4" />
+    </div>
+    <div class="mySlides fade">
+      <img src="assets/slider5.jpg" alt="Slide 5" />
+    </div>
+    <div class="mySlides fade">
+      <img src="assets/slider6.jpg" alt="Slide 6" />
+    </div>
+    <div class="mySlides fade">
+      <img src="assets/slider7.jpg" alt="Slide 7" />
+    </div>
+  </div>
+
+  <!-- Content Section -->
+  <div class="container">
+    <h2>Professional Flyer Designs</h2>
+    <p>We create stunning, impactful business flyers tailored to your brand identity.</p>
+    <a href="services.html" class="btn">View Our Services</a>
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 Medu_Graphics. All rights reserved.
+  </footer>
+
+  <!-- Slideshow Script -->
+  <script>
+    let slideIndex = 0;
+    const showSlides = () => {
+      let slides = document.getElementsByClassName("mySlides");
+      for (let i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) slideIndex = 1;
+      slides[slideIndex - 1].style.display = "block";
+      setTimeout(showSlides, 10000); // Change image every 10 seconds
+    };
+    showSlides();
+  </script>
+
+</body>
+</html>
